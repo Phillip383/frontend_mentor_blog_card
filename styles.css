@@ -37,8 +37,8 @@ footer {
   align-items: flex-start;
   justify-content: center;
   flex: 1 1 300px;
-  max-width: 300px;
-  max-height: 450px;
+  max-width: 350px;
+  max-height: 520px;
   background-color: white;
   padding: clamp(16px, 4cqi, 24px);
   gap: clamp(8px, 2cqi, 24px);
