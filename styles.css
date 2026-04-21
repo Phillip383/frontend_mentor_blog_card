@@ -57,6 +57,11 @@ footer {
   border-radius: 10px;
 }
 
+.content-title:hover {
+  color: #f4d04e;
+  cursor: pointer;
+}
+
 #blog-author {
   display: grid;
   grid-template-columns: auto auto;
