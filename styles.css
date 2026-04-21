@@ -15,12 +15,20 @@
 }
 
 body {
+  margin: 0;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  height: 100vh;
   background-color: #f4d04e;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .card {
@@ -28,11 +36,12 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 384px;
-  height: 522px;
+  flex: 1 1 300px;
+  max-width: 300px;
+  max-height: 450px;
   background-color: white;
-  padding: 24px;
-  gap: 10px;
+  padding: clamp(16px, 4cqi, 24px);
+  gap: clamp(8px, 2cqi, 24px);
   border-style: solid;
   border-width: 2px;
   border-color: black;
@@ -66,16 +75,10 @@ body {
   text-align: center;
 }
 
-.content-title {
-}
-
-.content-desc {
-}
-
 .text-preset-1 {
   font-family: "Figtree";
   font-weight: 800;
-  font-size: 24px;
+  font-size: clamp(14px, 20px, 24px);
   line-height: 150%;
   letter-spacing: 0%;
 }
@@ -83,7 +86,7 @@ body {
 .text-preset-2 {
   font-family: "Figtree";
   font-weight: 500;
-  font-size: 16;
+  font-size: clamp(10px, 14px, 16px);
   line-height: 150%;
   letter-spacing: 0%;
 }
@@ -91,7 +94,7 @@ body {
 .text-preset-3 {
   font-family: "Figtree";
   font-weight: 500;
-  font-size: 14;
+  font-size: clamp(10px, 12px, 14px);
   line-height: 150%;
   letter-spacing: 0%;
 }
